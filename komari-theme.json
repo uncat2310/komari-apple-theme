@@ -1,0 +1,240 @@
+{
+  "name": "Apple",
+  "short": "Apple",
+  "description": "Apple-inspired design with frosted glass effects, clean typography, and minimalist aesthetics.",
+  "version": "1.0.0",
+  "author": "Claude",
+  "url": "",
+  "preview": "",
+  "configuration": {
+    "type": "managed",
+    "name": {
+      "en": "Apple Theme Settings",
+      "zh-CN": "Apple 主题设置",
+      "ja": "Apple テーマ設定"
+    },
+    "data": [
+      {
+        "name": {
+          "en": "Appearance",
+          "zh-CN": "外观",
+          "ja": "外観"
+        },
+        "type": "title"
+      },
+      {
+        "key": "selectThemeColor",
+        "type": "select",
+        "name": {
+          "en": "Accent Color",
+          "zh-CN": "主题色",
+          "ja": "アクセントカラー"
+        },
+        "help": {
+          "en": "Choose the accent color for the theme.",
+          "zh-CN": "选择主题的强调色。",
+          "ja": "テーマのアクセントカラーを選択します。"
+        },
+        "options": "blue,sky,indigo,iris",
+        "default": "blue"
+      },
+      {
+        "key": "selectedDefaultAppearance",
+        "type": "select",
+        "name": {
+          "en": "Default Appearance",
+          "zh-CN": "默认外观",
+          "ja": "デフォルト外観"
+        },
+        "options": "system,light,dark",
+        "default": "system"
+      },
+      {
+        "key": "mainWidth",
+        "type": "number",
+        "name": {
+          "en": "Content Width (%)",
+          "zh-CN": "内容宽度（%）",
+          "ja": "コンテンツ幅（%）"
+        },
+        "default": 75
+      },
+      {
+        "name": {
+          "en": "Background & Blur",
+          "zh-CN": "背景与模糊",
+          "ja": "背景とぼかし"
+        },
+        "type": "title"
+      },
+      {
+        "key": "enableBlur",
+        "type": "switch",
+        "name": {
+          "en": "Enable Background Blur",
+          "zh-CN": "启用背景模糊",
+          "ja": "背景ぼかしを有効にする"
+        },
+        "default": true
+      },
+      {
+        "key": "blurValue",
+        "type": "number",
+        "name": {
+          "en": "Blur Amount (px)",
+          "zh-CN": "模糊值（px）",
+          "ja": "ぼかし量（px）"
+        },
+        "default": 24
+      },
+      {
+        "key": "blurBackgroundColor",
+        "type": "string",
+        "name": {
+          "en": "Blur Background Color",
+          "zh-CN": "模糊背景色",
+          "ja": "ぼかし背景色"
+        },
+        "help": {
+          "en": "Format: lightColor|darkColor. Use rgba for frosted glass effect.",
+          "zh-CN": "格式：浅色|深色。使用 rgba 实现毛玻璃效果。",
+          "ja": "形式：ライトカラー|ダークカラー。すりガラス効果には rgba を使用します。"
+        },
+        "default": "rgba(250, 250, 252, 0.55)|rgba(28, 28, 30, 0.55)"
+      },
+      {
+        "key": "backgroundImage",
+        "type": "string",
+        "name": {
+          "en": "Background Image (Desktop)",
+          "zh-CN": "背景图片（桌面端）",
+          "ja": "背景画像（デスクトップ）"
+        },
+        "default": ""
+      },
+      {
+        "key": "backgroundImageMobile",
+        "type": "string",
+        "name": {
+          "en": "Background Image (Mobile)",
+          "zh-CN": "背景图片（移动端）",
+          "ja": "背景画像（モバイル）"
+        },
+        "default": ""
+      },
+      {
+        "name": {
+          "en": "Display Options",
+          "zh-CN": "显示选项",
+          "ja": "表示オプション"
+        },
+        "type": "title"
+      },
+      {
+        "key": "enableStatsBar",
+        "type": "switch",
+        "name": {
+          "en": "Show Stats Bar",
+          "zh-CN": "显示统计栏",
+          "ja": "統計バーを表示"
+        },
+        "default": true
+      },
+      {
+        "key": "enableLogo",
+        "type": "switch",
+        "name": {
+          "en": "Show Logo",
+          "zh-CN": "显示 Logo",
+          "ja": "ロゴを表示"
+        },
+        "default": true
+      },
+      {
+        "key": "enableTitle",
+        "type": "switch",
+        "name": {
+          "en": "Show Title",
+          "zh-CN": "显示标题",
+          "ja": "タイトルを表示"
+        },
+        "default": true
+      },
+      {
+        "key": "enableSearchButton",
+        "type": "switch",
+        "name": {
+          "en": "Show Search",
+          "zh-CN": "显示搜索",
+          "ja": "検索を表示"
+        },
+        "default": true
+      },
+      {
+        "key": "enableGroupedBar",
+        "type": "switch",
+        "name": {
+          "en": "Show Group Bar",
+          "zh-CN": "显示分组栏",
+          "ja": "グループバーを表示"
+        },
+        "default": true
+      },
+      {
+        "key": "tagDefaultColorList",
+        "type": "string",
+        "name": {
+          "en": "Tag Colors",
+          "zh-CN": "标签颜色",
+          "ja": "タグの色"
+        },
+        "help": {
+          "en": "Comma-separated list of Radix color names.",
+          "zh-CN": "逗号分隔的 Radix 颜色名称列表。",
+          "ja": "カンマ区切りの Radix カラー名リスト。"
+        },
+        "default": "slate,gray,zinc,neutral,blue,indigo,sky,cyan"
+      },
+      {
+        "key": "statusCardsVisibility",
+        "type": "string",
+        "name": {
+          "en": "Status Cards",
+          "zh-CN": "状态卡片",
+          "ja": "ステータスカード"
+        },
+        "default": "currentTime:true,currentOnline:true,regionOverview:true,trafficOverview:true,networkSpeed:true"
+      },
+      {
+        "key": "customFooterHtml",
+        "type": "richtext",
+        "name": {
+          "en": "Custom Footer HTML",
+          "zh-CN": "自定义页脚 HTML",
+          "ja": "カスタムフッター HTML"
+        },
+        "default": ""
+      },
+      {
+        "key": "showIpTagsInCard",
+        "type": "switch",
+        "name": {
+          "en": "Show IP tags in card",
+          "zh-CN": "在卡片中显示IP标签",
+          "ja": "カードにIPタグを表示"
+        },
+        "default": true
+      },
+      {
+        "key": "showServerListInDetails",
+        "type": "switch",
+        "name": {
+          "en": "Show server list in details",
+          "zh-CN": "在详情页显示服务器列表",
+          "ja": "詳細ページにサーバーリストを表示"
+        },
+        "default": true
+      }
+    ]
+  }
+}
